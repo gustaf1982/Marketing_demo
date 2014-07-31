@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/favorite_item_photo"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/rock_sandal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/favorite_item_photo"
+        android:layout_toRightOf="@+id/favorite_item_photo"
+        android:orientation="vertical" >
+        <TextView
+        android:id="@+id/favorite_item_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/favorite_item_quantity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"       
+        android:text="TextView"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/favorite_item_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:text="Hello Mr.Dong"
+        android:textColor="#f13838" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/favorite_item_photo"
+        android:layout_alignParentRight="true"
+        android:background="@color/white"
+        android:src="@android:drawable/presence_offline" />
+
+</RelativeLayout>

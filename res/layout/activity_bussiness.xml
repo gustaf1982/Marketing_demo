@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/header"/>
+
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:scaleType="fitXY"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/background_big" />
+
+	<LinearLayout
+	    android:background="#a0a0a0"
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+		<TextView
+		    android:layout_margin="3dp"
+		    android:id="@+id/textView1"
+		    android:layout_weight="1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Main Market" />
+
+		<TextView
+		    android:id="@+id/textView2"
+		    android:layout_margin="3dp"
+		    android:layout_weight="1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Total Revenue" />
+
+		<TextView
+		    android:id="@+id/textView3"
+		    android:layout_margin="3dp"
+		    android:layout_weight="1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Main Products" />
+
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+		<TextView
+		    android:id="@+id/textView4"
+		    android:layout_weight="1"
+		    android:layout_margin="3dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="South Africa" />
+
+		<TextView
+		    android:id="@+id/textView5"
+		    android:layout_weight="1"
+		    android:layout_margin="3dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="70.00%" />
+
+		<TextView
+		    android:id="@+id/textView6"
+		    android:layout_weight="1"
+		    android:layout_margin="3dp"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="fashion style" />
+
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+		<TextView
+		    android:id="@+id/textView7"
+		    android:layout_margin="3dp"
+		    android:layout_weight="1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="North America" />
+
+		<TextView
+		    android:id="@+id/textView8"
+		    android:layout_margin="3dp"
+		    android:layout_weight="1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="30.00%" />
+
+		<TextView
+		    android:id="@+id/textView9"
+		    android:layout_margin="3dp"
+		    android:layout_weight="1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="sexy style" />
+
+	</LinearLayout>
+
+	<TextView
+	    android:layout_marginTop="10dp"
+	    android:id="@+id/textView10"
+	    android:background="#a0a0a0"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Trade Ability" />
+
+	<TextView
+	    android:id="@+id/textView11"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Language : English Japanese" />
+
+	<TextView
+	    android:id="@+id/textView12"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Lead Time : 30days" />
+	
+</LinearLayout>

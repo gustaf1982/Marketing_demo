@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sus.gustaf.marketingdemo.MainActivity" >
+
+    <include layout="@layout/header" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp" >
+
+        <TextView
+            android:scrollbars="vertical"
+            android:id="@+id/about_company"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="1. It's boring just being the same as everyone else. We are a brand that embodies the fashion of Harajuku, Shibuya, and Akihabara, in Lolita, gothic, rock, and cosplay styles-one that communicates the message of KAWAII  culture from Japan. 
+2. Products focused on Japanese designs and Japanese quality. 
+3. The type of heartfelt, polite, and courteous support that only Japanese staff can offer. 
+4. Number one in market share in the Japanese market when it comes to Lolita and gothic items. 
+5. In Japan, our sales are growing in online shopping venues such as Rakuten, Amazon, Locondo, and Yahoo, as well as in brick-and-mortar stores, mainly Out of the World in Harajuku. In department stores, we're focusing on expanding in the Shinjuku Marui Annex. We've been active in Hong Kong for over ten years, but last year, we also began sales in Belgium, Spain, and Holland. 
+6. Supporting Japanese communication subcultures such as anime and cosplay. 
+7. Our company was founded in 2006. The Yosuke brand itself has a twenty-seven-year history. We strive to develop appealing designs that will expand our fan base not just in Japan, but overseas as well. We offer platform shoes that distinguish themselves with their unusual materials and color combinations. 
+8. We are published every month in the gothic Lolita magazine KERA, and we are frequently used as the choice of on-stage clothing for Japan's Akihabara-style idol groups, artists, and events. We are also frequently chosen for the outfits worn at live events by Japanese voice actors in TV dramas, movies, and anime." />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/phone_dialoge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WELCOME TO VISIT US!"
+                android:textColor="@color/green"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="online : 888-888 888 888" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phone : 81-3-56034471" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/btn_call"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                   	android:background="@drawable/white_btn"
+                    android:layout_gravity="center_vertical"
+                    android:src="@android:drawable/stat_sys_phone_call" />
+
+                <Button
+                    android:id="@+id/btn_online_call"
+                    android:layout_margin="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/green_btn"
+                    android:text="Online"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+                
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

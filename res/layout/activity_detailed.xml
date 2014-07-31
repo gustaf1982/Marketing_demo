@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include 
+        layout="@layout/header"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+        		android:padding="5dp"
+        		android:orientation="vertical"
+        		android:background="@drawable/image_bg"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content" >
+
+        		<ImageView
+            		android:layout_gravity="center_horizontal"
+            		android:background="@color/white"
+            		android:id="@+id/detail_goods_photo"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:src="@drawable/rock_sandal" />
+
+    		</LinearLayout>
+
+    		<LinearLayout
+        		android:orientation="horizontal"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content" >
+
+        	<TextView
+            	android:layout_margin="5dp"
+            	android:padding="3dp"
+            	android:id="@+id/detail_goods_name"
+            	android:layout_width="fill_parent"
+            	android:layout_height="35dp"
+            	android:gravity="center_vertical"
+            	android:layout_weight="1"
+            	android:text="name : sexy_shoes" />
+
+        	<TextView
+            	android:layout_margin="5dp"
+            	android:padding="3dp"
+            	android:id="@+id/detail_goods_price"
+            	android:layout_weight="1"
+            	android:layout_width="fill_parent"
+            	android:layout_height="35dp"
+            	android:gravity="center_vertical"
+            	android:text="cost : 88$" />
+
+    		</LinearLayout>
+
+    		<LinearLayout
+        		android:layout_width="match_parent"
+        		android:layout_height="1dp"
+        		android:background="#a0a0a0"
+        		android:orientation="vertical" >
+    		</LinearLayout>
+
+    		<LinearLayout
+        		android:orientation="vertical"
+        		android:padding="5dp"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content" >
+
+        		<LinearLayout
+            		android:layout_gravity="center_horizontal"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content" >
+
+            		<Button
+                		android:id="@+id/detail_cart"
+                		android:textColor="#f0f0f0"
+                		android:layout_marginRight="7dp"
+                		android:layout_width="120dp"
+                		android:padding="0dp"
+                		android:background="@drawable/red_gradient_btn"
+                		android:layout_height="35dp"
+                		android:text="shoping cart" />
+
+            		<Button
+                		android:id="@+id/detail_favorite"
+                		android:textColor="#f0f0f0"
+                		android:layout_marginLeft="7dp"
+                		android:layout_width="120dp"
+                		android:padding="0dp"
+                		android:background="@drawable/red_gradient_btn"
+                		android:layout_height="35dp"
+                		android:text="favorite" />
+
+        		</LinearLayout>
+
+    		</LinearLayout>
+    
+    		<LinearLayout
+        		android:layout_width="match_parent"
+        		android:layout_height="1dp"
+        		android:background="#a0a0a0"
+        		android:orientation="vertical" >
+    		</LinearLayout>
+
+    		<LinearLayout
+        		android:padding="5dp"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="vertical" >
+
+        		<TextView
+            		android:id="@+id/textView1"
+            		android:padding="3dp"
+            		android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:text="About Goods" />
+
+        		<TextView
+            		android:layout_marginTop="3dp"
+            		android:padding="3dp"
+            		android:id="@+id/detailed_about"
+            		android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:text="The shoe box, made just the size matching the number of shoes, is packed in a reinforced cardboard box. If a shoe box is not desired, the products are wrapped in plastic and packed with cushioning material. The biggest cardboard box is 70 x 70 x 70 cm in size." />
+
+    		</LinearLayout>
+    
+    		<LinearLayout
+        		android:layout_width="match_parent"
+        		android:layout_height="1dp"
+        		android:background="#a0a0a0"
+        		android:orientation="vertical" >
+    		</LinearLayout>
+
+    		<LinearLayout
+       	 		android:id="@+id/detail_goods_evaliation"
+        		android:padding="5dp"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:orientation="vertical" >
+
+        		<TextView
+            		android:padding="3dp"            
+            		android:layout_width="wrap_content"
+            		android:layout_height="35dp"
+            		android:gravity="center_vertical"
+            		android:text="Evaliation" />
+
+    		</LinearLayout>
+    		<LinearLayout
+        		android:layout_width="match_parent"
+        		android:layout_height="1dp"
+        		android:background="#a0a0a0"
+        		android:orientation="vertical" >
+    		</LinearLayout>
+
+    		<Button
+        		android:id="@+id/detail_service_after"
+        		android:textColor="#f0f0f0"
+        		android:layout_marginTop="5dp"
+        		android:background="@drawable/black_gradient_btn"
+        		android:layout_gravity="center_horizontal"
+        		android:layout_width="250dp"
+        		android:layout_height="35dp"
+        		android:text="Service 800 0325 025" />
+        </LinearLayout>
+    </ScrollView>
+
+    
+
+</LinearLayout>
